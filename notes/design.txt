@@ -1,0 +1,10 @@
+Design Notes:
+-------------
+
+"Intro" docs are spread throughout the form -- these can be dismissed individually.
+Once dismissed, they will remain hidden unless the user expands "Intros" again.
+Expanding intros can be done as "show all", or "reveal" -- in the latter case a
+small floating expander will show up where any intro doc section is and this can be
+expanded or collapsed.
+
+Rules docs are displayed

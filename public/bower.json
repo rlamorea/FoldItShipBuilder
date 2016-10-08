@@ -1,0 +1,22 @@
+{
+  "name": "FoldItShipBuilder",
+  "authors": [
+    "Rick Lamoreaux"
+  ],
+  "description": "FoldIt Ship Builder Application",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.4",
+    "font-awesome": "fontawesome#^4.6.3",
+    "lodash": "^4.16.4"
+  }
+}

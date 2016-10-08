@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+        <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/lib/lodash/dist/lodash.min.js"></script>
+        <script type="text/javascript" src="/lib/tether/dist/js/tether.min.js"></script>
+        <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/javascripts/utils.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        <a class="navbar-brand" href="#">FoldIt Ship Builder</a>
+        <ul class="nav navbar-nav pull-sm-right">
+            <li class="nav-item">
+                <a id="expand-all" class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Expand All">
+                    <span class="fa-stack">
+                        <i class="fa fa-stack-2x fa-circle-o"></i>
+                        <i class="fa fa-stack-1x fa-expand"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="compress-all" class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Collapse All">
+                    <span class="fa-stack">
+                        <i class="fa fa-stack-2x fa-circle-o"></i>
+                        <i class="fa fa-stack-1x fa-compress"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        {{{body}}}
+    </div>
+    </body>
+</html>

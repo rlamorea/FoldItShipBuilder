@@ -1,0 +1,72 @@
+<div class="step"><a class="anchor" name="classification"></a>
+    <h2><u>step 1.</u> Classification</h2>
+    <div class="doc intro disp" data-key="classification"></div>
+    <div id="sel-category" class="sel">
+        <p class="sel-title">Select Category</p>
+        <ol>
+            <li>
+                <input type="radio" id="category-craft" name="category" value="craft"/>
+                <label for="category-craft">
+                    <b>Craft</b> -
+                    Small, compact starships intended for short duration operations.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="category-ship" name="category" value="ship"/>
+                <label for="category-ship">
+                    <b>Ship</b> -
+                    Starships large enough to handle extended durations, but not so large that they require special handling.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="category-capital-ship" name="category" value="capital-ship"/>
+                <label for="category-capital-ship">
+                    <b>Capital Ship</b> -
+                    Large military and commercial starships.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="category-supership" name="category" value="supership"/>
+                <label for="category-supership">
+                    <b>Supership</b> -
+                    Massive starships and installations used for highly specialized purposes or providing military overkill.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="category-megaship" name="category" value="megaship"/>
+                <label for="category-megaship">
+                    <b>Megaship</b> -
+                    Starships (and, more commonly, installations) that serve as spaceborne cities.
+                </label>
+            </li>
+        </ol>
+    </div>
+    <div id="sel-type" class="sel">
+        <p class="sel-title">Select Type</p>
+        <input type="text" name="type"/>
+    </div>
+    <div id="sel-class" class="sel">
+        <p class="sel-title">Select Class</p>
+        <input type="text" name="class"/>
+    </div>
+    <a class="top" href="#top">back to top</a>
+</div>
+<script type="text/javascript">
+    design.category = null;
+    design.type = '';
+    design.class = '';
+
+    $('#sel-category').find('input[type=radio]').click(function(e) {
+        var cat = $(e.target).attr('value');
+        utils.updateDesign('category', cat);
+    });
+    $('#sel-type').find('input').change(function(e) {
+        utils.updateDesign('type', $(e.target).val().trim());
+    });
+    $('#sel-class').find('input').change(function(e) {
+        utils.updateDesign('class', $(e.target).val().trim());
+    });
+
+    $('#sel-category').find('input[type=radio][value=craft]').attr('checked', true);
+    utils.updateDesign('category', 'craft');
+</script>

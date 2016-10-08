@@ -1,0 +1,18 @@
+{
+    "attribute": "The set of physical characteristics (or representations of them) of a design or design step.",
+    "category": "The broad classification of a starship design’s size.",
+    "class": "The unique identification of a starship.",
+    "control requirement": "A generic measure of the needed control units to operate the component (such as engineering, operations, command crew or computer software).",
+    "cost": "The base cost (in “monetary units” or \u03bc) of the component or feature.",
+    "design": "The generic term for the starship you are creating.",
+    "external size": "Extra size added to the design through components external to the design’s base structure.",
+    "fuel requirement": "The amount of fuel a component requires for normal operation for the standard time period.",
+    "power requirement": "The amount of power a component requires for normal operation.",
+    "resource": "An expendable consumed by a design.",
+    "size": "A scaled specification of the relative size of a starship within its category.",
+    "space": "The scaled units of the space available for components of the design.",
+    "technology level": "A general indication of the technological sophistication of a design. (TL)",
+    "technology track": "One of a set of possible alternate technologies that a design may have available to it.",
+    "type": "A classification of a starship’s intended function.",
+    "universe": "A set of specifications and additional rules that define how to design for a setting."
+}

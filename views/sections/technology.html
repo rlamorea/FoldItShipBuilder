@@ -1,0 +1,231 @@
+<div class="step"><a class="anchor" name="technology"></a>
+    <h2><u>Step 2</u> Technology</h2>
+    <div class="doc intro disp" data-key="technology"></div>
+    <div id="sel-tl" class="sel">
+        <p class="sel-title">Select Technology Level</p>
+        <ol start="5">
+            <li>
+                <input type="radio" id="tl-5" name="tl" value="5"/>
+                <label for="tl-5">
+                    <b>Space Age</b> -
+                    Chemical and nuclear rockets, and mostly orbital operations.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="tl-6" name="tl" value="6"/>
+                <label for="tl-6">
+                    <b>Solar Age</b> -
+                    High efficiency rockets and early interplanetary operations.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="tl-7" name="tl" value="7"/>
+                <label for="tl-7">
+                    <b>Power Age</b> -
+                    Early alternative (non-rocket) propulsion systems and common interplanetary operations.
+                    Early interstellar operations.
+                    <br/>&nbsp;&nbsp;&nbsp;
+                    <i>Minimum TL to construct “supership” category designs.</i>
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="tl-8" name="tl" value="8"/>
+                <label for="tl-8">
+                    <b>Matter Age</b> -
+                    Common alternative propulsion systems and everyday interplanetary travel.  Common interstellar operations.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="tl-9" name="tl" value="9"/>
+                <label for="tl-9">
+                    <b>Quantum Age</b> -
+                    Advanced propulsion systems and common interstellar operations.
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="tl-10" name="tl" value="10"/>
+                <label for="tl-10">
+                    <b>Mind Age</b> -
+                    Pretty much whatever you want to exist.
+                </label>
+            </li>
+        </ol>
+    </div>
+    <div id="sel-technology-track" class="sel">
+        <p class="sel-title">Select Technology Track(s)</p>
+        <table>
+            <thead><tr>
+                <th>Select/Proto</th>
+                <th>Technology Track</th>
+                <th>Min. TL</th>
+                <th>Description</th>
+            </tr></thead>
+            <tbody>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-supercruise" type="checkbox" name="technology-track" value="supercruise" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="supercruise"/>
+                </td>
+                <th><label for="tt-supercruise">Supercruise</label></th>
+                <td>7</td>
+                <td>
+                    The ability to travel through normal space faster than the speed of light (C+).
+                    A Star Trek-style Warp drive is a prime example of this.
+                </td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-jump" type="checkbox" name="technology-track" value="jump" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="jump"/>
+                </td>
+                <th><label for="tt-jump">Jump</label></th>
+                <td>7</td>
+                <td>
+                    The ability to jump a starship from one location to another in an instant after some delay
+                    while the mechanism activates.  A Battlestar Galactica-style jump drive is an example of this.
+                </td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-otherspace" type="checkbox" name="technology-track" value="otherspace" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="otherspace"/>
+                </td>
+                <th><label for="tt-otherspace">Otherspace</label></th>
+                <td>7</td>
+                <td>
+                    The ability to push a starship into another realm of space where rules of distance or physics
+                    allow for rapid travel between points in normal space.  A starship’s normal propulsion systems
+                    move the ship through this otherspace.  Star Wars-style hyperdrive or Babylon 5-style hyperspace
+                    jump points are examples of this.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="tt-jump-network" type="checkbox" name="technology-track" value="jump-network"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="jump-network" disabled/>
+                </td>
+                <th><label for="tt-jump-network">Jump Network</label></th>
+                <td>5</td>
+                <td>
+                    A network of “gates” that allow a starship to jump between them (as described by the Jump track)
+                    when activated.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="tt-otherspace-network" type="checkbox" name="technology-track" value="otherspace-network" data-disable="tl<6"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="otherspace-network"/>
+                </td>
+                <th><label for="tt-otherspace-network">Otherspace Network</label></th>
+                <td>6</td>
+                <td>
+                    A network of “gates” that allow a starship access into and out of otherspace (as described by
+                    the Otherspace track) when activated.
+                </td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-superreactor" type="checkbox" name="technology-track" value="superreactor" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="superreactor"/>
+                </td>
+                <th><label for="tt-superreactor">Superreactor</label></th>
+                <td>7</td>
+                <td>
+                    A form of reactor that allows for super-efficient power generation using exotic fuels
+                    (like antimatter or pixie dust).
+                </td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-gravity" type="checkbox" name="technology-track" value="gravity" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="gravity"/>
+                </td>
+                <th><label for="tt-gravity">Gravity</label></th>
+                <td>7</td>
+                <td>Ability to artificially manipulate gravity.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="tt-ptot" type="checkbox" name="technology-track" value="ptot" data-disable="tl<6"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="ptot"/>
+                </td>
+                <th><label for="tt-ptot">Power-to-Thrust (PtoT)</label></th>
+                <td>6</td>
+                <td>
+                    A method to convert power directly into thrust, removing the need for the propulsion systems to consume fuel.
+                </td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-cloaking" type="checkbox" name="technology-track" value="cloaking" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="cloaking"/>
+                </td>
+                <th><label for="tt-cloaking">Cloaking</label></th>
+                <td>7</td>
+                <td>
+                    Ability to mask a starship from detection by all sensors (including visual) through some means.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="tt-deflection-shield" type="checkbox" name="technology-track" value="deflection-shield" data-disable="tl<6"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="deflection-shield"/>
+                </td>
+                <th><label for="tt-deflection-shield">Deflection Shield</label></th>
+                <td>6</td>
+                <td>Ability to use energy to redirect an incoming attack.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="tt-absorption-shield" type="checkbox" name="technology-track" value="absorption-shield" data-disable="tl<6"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="absorption-shield"/>
+                </td>
+                <th><label for="tt-absorption-shield">Absorption Shield</label></th>
+                <td>6</td>
+                <td>Ability to use energy to absorb the damage of an incoming attack.</td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-shield" type="checkbox" name="technology-track" value="shield" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="shield"/>
+                </td>
+                <th><label for="tt-shield">Shield</label></th>
+                <td>7</td>
+                <td>Combines both deflection and absorption shielding.</td>
+            </tr>
+            <tr data-hide="tl<6">
+                <td>
+                    <input id="tt-molecular-assembly" type="checkbox" name="technology-track" value="molecular-assembly" data-disable="tl<7"/> /
+                    <input type="checkbox" name="prototype-technology-track" value="molecular-assembly"/>
+                </td>
+                <th><label for="tt-molecular-assembly">Molecular Assembly</label></th>
+                <td>7</td>
+                <td>Ability to create objects from raw elements.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a class="top" href="#top">back to top</a>
+</div>
+<script type="text/javascript">
+    var maxTechnologyTracks = 6;
+
+    design.tl = null; // unknown
+    design.technologyTracks = [];
+    design.prototypeTechnologyTrack = null;
+
+    $('#sel-tl').find('input[type=radio]').click(function(e) {
+        var tl = $(e.target).attr('value');
+        utils.updateDesign('tl', parseInt(tl));
+    });
+
+    $('#sel-technology-track').find('input[type=checkbox][name=technology-track]').click(function(e) {
+
+    });
+    $('#sel-technology-track').find('input[type=checkbox][name=prototype-technology-track]').click(function(e) {
+
+    });
+
+    $('#sel-tl').find('input[type=radio][value=5]').attr('checked', true);
+    utils.updateDesign('tl', 5);
+</script>

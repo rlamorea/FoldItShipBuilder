@@ -1,0 +1,139 @@
+@import "../lib/bootstrap/scss/bootstrap";
+$fa-font-path: "../lib/font-awesome/fonts";
+@import "../lib/font-awesome/scss/font-awesome";
+
+$nav-header-height:  65px;
+
+body {
+    padding-top: $nav-header-height;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -$nav-header-height;
+    visibility: hidden;
+}
+a.top {
+    display: block;
+    margin: 1em 0 0.5em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+}
+
+.navbar-nav .fa-stack { font-size: 0.9em; }
+
+h2 {
+    margin: 0.5em 0 0.3em;
+    font-size: 1.5em;
+
+    u {
+        text-decoration: none;
+        font-size: 0.6em;
+        text-transform: uppercase;
+    }
+}
+
+.tooltip { font-size: 0.7em; }
+.doc {
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.3em; }
+    h4 { font-size: 1.2em; }
+    h5 { font-size: 1.1em; }
+
+    font-size: 0.75em;
+
+    code {
+        font-size: 1em;
+        font-family: $font-family-base;
+        font-weight: bold;
+        color: inherit;
+        border-bottom: 1px dashed $gray;
+        padding: 0;
+    }
+}
+.doc.intro {
+    background: $gray-lightest;
+    padding: 0.25em 1.2em 0.25em 0.5em;
+    text-align: justify;
+    position: relative;
+    color: $gray-dark;
+    height: auto;
+    transition: color 0.4s, height 0.4s;
+
+    .remove {
+        position: absolute;
+        top: 0; right: 0.25em;
+        width: 1.5em; height: 1.5em;
+        color: $gray-dark;
+        opacity: 0;
+        transition: opacity 0.1s;
+        cursor: pointer;
+    }
+    .remove:after {
+        content: "\f01b";
+        font-family: FontAwesome;
+        font-size: 1.5em;
+    }
+}
+.doc.intro:hover .remove {
+    opacity: 0.5;
+}
+.doc.intro:hover .remove:hover {
+    opacity: 1;
+}
+
+.doc.intro.collapsed {
+    height: 2.0em;
+    color: transparent;
+    cursor: pointer;
+
+    .ct {
+        height: 2em; overflow: hidden;
+
+        h1, h2, h3, h4, h5 { color: $gray-light; font-size: 1em; }
+    }
+}
+.doc.intro.collapsed .remove { opacity: 0.5; }
+.doc.intro.collapsed:hover {
+    h1, h2, h3, h4, h5 { color: $gray-dark; }
+    .remove { opacity: 1; }
+}
+.doc.intro.collapsed .remove:after {
+    content: "\f01a";
+}
+
+.sel {
+    font-size: 0.8em;
+    .sel-title { font-size: 1.1em; font-weight: bold; margin-bottom: 0.1em; }
+
+    ol li input { vertical-align: top; margin-top: 2px; }
+    ol li label { vertical-align: top; }
+
+    table {
+        width: 100%;
+
+        tr { border-bottom: solid 1px gray; }
+        tbody tr:nth-child(odd) { background-color: #eeeeee; }
+    }
+}
+
+#sel-technology-track {
+    table {
+        tr th:first-child, tr td:first-child {
+            text-align: center;
+            width: 10%;
+        }
+        tr th:nth-child(2), tr td:nth-child(2) { width: 15%; }
+        tr th:nth-child(3), tr td:nth-child(3) {
+            width: 8%;
+            text-align: center;
+        }
+    }
+}
+#sel-size {
+    table {
+        tr th, tr td { width: 20; text-align: center; }
+        tr th:first-child, tr td:first-child { width: 40%; text-align: left; }
+    }
+}
